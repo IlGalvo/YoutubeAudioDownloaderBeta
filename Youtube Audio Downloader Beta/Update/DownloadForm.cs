@@ -42,7 +42,7 @@ namespace YoutubeAudioDownloaderBeta.Update
                     int timeout = ((!notify) ? UpdateUtilities.DefaultTimeout : UpdateUtilities.LongTimeout);
 
                     using (WebClientTimeout webClientTimeout = new WebClientTimeout(timeout))
-                    using (StreamReader streamReader = new StreamReader(webClientTimeout.OpenRead(UpdateUtilities.FileCheckLink2)))
+                    using (StreamReader streamReader = new StreamReader(webClientTimeout.OpenRead(UpdateUtilities.FileCheckLink)))
                     {
                         Versioning versioning = ((Versioning)new XmlSerializer(typeof(Versioning)).Deserialize(streamReader));
 
