@@ -50,9 +50,7 @@ namespace YoutubeAudioDownloaderBeta.Update
                         {
                             if (currentVersion < latestVersion)
                             {
-                                string downloadLink = (UpdateUtilities.DriveDownloadLink + versioning.FileID);
-
-                                using (UpdateForm updateForm = new UpdateForm(downloadLink, versioning.VersionHistory))
+                                using (UpdateForm updateForm = new UpdateForm(versioning.DownloadUrl, versioning.VersionHistory))
                                 {
                                     dialogResult = updateForm.ShowDialog();
                                 }

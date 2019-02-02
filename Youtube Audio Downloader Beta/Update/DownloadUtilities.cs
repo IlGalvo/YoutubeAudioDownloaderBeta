@@ -17,9 +17,13 @@ namespace YoutubeAudioDownloaderBeta.Update
         #endregion
 
         #region LINK
-        public static string DriveDownloadLink { get { return ("https://onedrive.live.com/download?resid="); } }
-
-        public static string FileCheckLink { get { return (DriveDownloadLink + "7D7FF9DFDA23C644!1195&authkey=!AKayxLNoGtz8Pjw"); } }
+        public static string FileCheckLink
+        {
+            get
+            {
+                return ("https://onedrive.live.com/download?resid=7D7FF9DFDA23C644!2368&authkey=!AFcY04VNisbcdlE");
+            }
+        }
         #endregion
 
         #region LABELINFO
